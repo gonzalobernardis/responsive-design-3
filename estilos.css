@@ -1,0 +1,98 @@
+header {
+    background-color: brown;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerFlexHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloHeader {
+    text-align: center;
+}
+
+.logoHeader {
+    background-color: gold;
+    width: 10%;
+    text-align: center;
+}
+
+h1 {
+    background-color: dimgrey;
+    width: 50%;
+    text-align: center;
+}
+
+section {
+    background-color: chartreuse;
+    height: 200px;
+    margin: 3% 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.divSection {
+    background-color: darkviolet;
+    width: 150px;
+}
+
+.containerFlexSection {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+.tituloSection {
+    text-align: center;
+}
+
+footer {
+    background-color: deepskyblue;
+    height: 80px;
+    text-align: center;
+    margin: 0 5%;
+}
+
+@media (max-width: 768px) {
+    .containerFlexSection {
+        flex-wrap: wrap;
+        height: 80%;
+        justify-content: space-between;
+    }
+    .divSection {
+        margin: 10px 20px;
+    }
+    section {
+        height: 300px;
+    }
+    header {
+        width: 80%;
+        margin: 0 10%;
+    }
+    footer {
+        margin: 0 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerFlexHeader {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    h1 {
+        width: 90%;
+    }
+    .logoHeader {
+        width: 90%;
+    }
+    .divSection {
+        width: 100%;
+    }
+}
